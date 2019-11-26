@@ -1,0 +1,7 @@
+apiVersion: ansible-operator.openshift.pub/v1
+kind: Hello
+metadata:
+  name: example-hello
+spec:
+  # Add fields here
+  size: 3

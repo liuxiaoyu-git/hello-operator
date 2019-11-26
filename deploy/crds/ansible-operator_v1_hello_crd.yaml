@@ -1,0 +1,20 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  creationTimestamp: null
+  name: hellos.ansible-operator.openshift.pub
+spec:
+  group: ansible-operator.openshift.pub
+  names:
+    kind: Hello
+    listKind: HelloList
+    plural: hellos
+    singular: hello
+  scope: Namespaced
+  subresources:
+    status: {}
+  version: v1
+  versions:
+  - name: v1
+    served: true
+    storage: true
